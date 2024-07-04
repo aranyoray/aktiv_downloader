@@ -60,7 +60,7 @@ def click_login_button(driver):
 def download_pdf(from_date, to_date):
     driver = None
     try:
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
         stealth(driver,
                 languages=["en-US", "en"],
                 vendor="Google Inc.",
